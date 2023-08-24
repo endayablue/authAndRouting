@@ -21,8 +21,9 @@ const Home = () => {
       const { status, user } = data;
       setUsername(user);
       return status
-        ? toast(`Hello ${user}`, {
+        ? toast(`Welcome ${user}`, {
             position: "top-right",
+            toastId: "login-success",
           })
         : (removeCookie("token"), navigate("/login"));
     };
@@ -35,6 +36,7 @@ const Home = () => {
   return (
     <>
       <div className="home_page">
+      <div className="form-branding"><h2>FitConnect</h2></div>
         <h4>
           {" "}
           Welcome <span>{username}</span>

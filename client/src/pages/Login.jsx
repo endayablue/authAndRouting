@@ -59,7 +59,8 @@ const Login = () => {
 
   return (
     <div className="form_container">
-      <h2>Login Account</h2>
+        <div className="form-branding"><h2>FitConnect</h2></div>
+      <h2>Login</h2>
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="email">Email</label>

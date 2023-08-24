@@ -23,9 +23,9 @@ body {
   align-items: center;
   background: linear-gradient(
     90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(143, 187, 204, 1) 35%,
-    rgba(0, 212, 255, 1) 100%
+    rgb(213, 213, 214) 0%,
+    rgb(148, 204, 143) 35%,
+    rgb(0, 255, 0) 100%
   );
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -39,10 +39,26 @@ body {
   box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
 }
 
+.form-branding {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-branding > h2 {
+  font-size: 2em;
+  background: -webkit-linear-gradient(#9ad498, #08a710);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: none;
+}
+
 .form_container > h2 {
   margin-block: 1rem;
   padding-block: 0.6rem;
-  color: rgba(0, 212, 255, 1);
+  color: rgba(74, 139, 74);
 }
 
 .form_container > form {
@@ -71,7 +87,7 @@ body {
 }
 
 .form_container button {
-  background-color: rgba(0, 212, 255, 1);
+  background-color: rgb(74, 139, 74);
   color: #fff;
   border: none;
   padding: 0.6rem;
@@ -82,7 +98,7 @@ body {
 
 span a {
   text-decoration: none;
-  color: rgba(0, 212, 255, 1);
+  color: rgb(60, 150, 83);
 }
 
 .home_page {

@@ -60,7 +60,8 @@ const Signup = () => {
 
   return (
     <div className="form_container">
-      <h2>Signup Account</h2>
+        <div className="form-branding"><h2>FitConnect</h2></div>
+      <h2>Signup</h2>
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="email">Email</label>
